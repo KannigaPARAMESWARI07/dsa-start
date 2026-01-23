@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int greatr(int arr[],int n,int x){
+	int cnt=0;
+	for (int i=0;i<n;i++){
+		if(arr[i]>x){
+			cnt++;
+			cout<<arr[i]<<endl;
+		}
+		
+	}
+	return cnt;
+		
+		
+	
+	
+}
+int main(){
+	int n,x;
+	cin>>n;
+	int arr[n];
+	for (int i=0;i<n;i++){
+		cin>>arr[i];
+	}
+	cin>>x;
+	int res;
+	
+	res=greatr(arr,n,x);
+	cout<<res;
+	
+}
+
